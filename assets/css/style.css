@@ -108,9 +108,6 @@
   color: var(--color-primary);
 }
 @media (max-width: 767px) {
-  /* .p-rel-mob {
-    position: relative;
-  } */
   #menuHolder {
     display: none;
     position: absolute;
