@@ -103,6 +103,10 @@
 .navbar-toggler-icon {
   background-color: var(--color-white);
 }
+.megaMenu a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
 @media (max-width: 767px) {
   /* .p-rel-mob {
     position: relative;
