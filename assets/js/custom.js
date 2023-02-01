@@ -20,7 +20,17 @@ jQuery(document).ready(function ($) {
       $("#menuHolder").show()
     }
   })
-  $(".navbar-toggler").on("click", () => {
+  $(document).on("click", ".navbar-toggler", () => {
+    console.log($(".navbar-toggler").attr("class"))
+    if ($(".navbar-toggler").hasClass("active")) {
+      $(".navbar-toggler").removeClass("active")
+      $(".navbar-toggler").children("i").removeClass("bi-x-lg")
+      $(".navbar-toggler").children("i").addClass("bi-list")
+    } else {
+      $(".navbar-toggler").addClass("active")
+      $(".navbar-toggler").children("i").removeClass("bi-list")
+      $(".navbar-toggler").children("i").addClass("bi-x-lg")
+    }
     $("#menuHolder").slideToggle()
   })
 })
